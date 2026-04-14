@@ -6,9 +6,9 @@ namespace FirstCoreWebApplicationUsingMW
         {
             var builder = WebApplication.CreateBuilder(args);
             var app = builder.Build();
-            //MapGet,Run,Use are the builtin extensions 
-
-            //app.MapGet("/", () => "Hello World!");
+            //Map,MapGet,Run,Use are the builtin extensions 
+            // MAp, MapGet are mainly use to create minimal API's and it is used to handle the request and response without using any middleware component, but in this example we are going to use middleware component to handle the request and response. so we are not going to use Map and MapGet extension methods in this example.
+            //app.Map("/", () => "Hello World!");
             //app.MapGet("/welcome/name", (string name) => $"Welcome {name} to ASP.NET Core Web API!");
 
             //Configure the first middleware to handle the request and response usinf Run extension method
